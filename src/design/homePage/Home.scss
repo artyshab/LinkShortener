@@ -1,0 +1,18 @@
+.opacity {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 3.5rem;
+  font-size: 1.6rem;
+}
+

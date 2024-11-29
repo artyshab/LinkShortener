@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.2rem;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.462);
+    width: 50%;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    .input-title {
+      p {
+        font-size: 1.6rem;
+        font-weight: 700;
+        
+      }
+    }
+    .input-field {
+      display: flex;
+      gap: 15px;
+      input {
+        border: none;
+        border-radius: 5px;
+        width: 400px;
+        padding: 5px 2px;
+        font-size: 1.3rem;
+      }
+      button {
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        padding: 5px 2px;
+        background: white;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+    .input-description {
+      p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        
+      }
+    }
+  }
+  
