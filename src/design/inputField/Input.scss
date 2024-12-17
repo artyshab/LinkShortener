@@ -1,83 +1,131 @@
 .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1.2rem;
-    position: relative;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.462);
-    width: 50%;
-    height: 280px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 15px;
-    .input-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.2rem;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.462);
+  width: 50%;
+  height: 280px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+
+  .input-title {
       p {
-        font-size: 1.6rem;
-        font-weight: 700;
-        
+          font-size: 1.6rem;
+          font-weight: 700;
       }
-    }
-    .input-field {
+  }
+
+  .input-field {
       display: flex;
+      flex-wrap: wrap; 
       gap: 15px;
+      justify-content: center; 
       input {
-        border: none;
-        border-radius: 5px;
-        width: 400px;
-        padding: 5px 2px;
-        font-size: 1.3rem;
+          border: none;
+          border-radius: 5px;
+          width: 100%; 
+          max-width: 400px; 
+          padding: 5px 2px;
+          font-size: 1.3rem;
       }
       button {
-        border: none;
-        border-radius: 5px;
-        width: 100px;
-        padding: 5px 2px;
-        background: white;
-        font-size: 1.1rem;
-        font-weight: 700;
-        cursor: pointer;
+          border: none;
+          border-radius: 5px;
+          width: 100px;
+          padding: 5px 2px;
+          background: white;
+          font-size: 1.1rem;
+          font-weight: 700;
+          cursor: pointer;
       }
-    }
-    .input-description {
-      p {
-        font-size: 1.2rem;
-        font-weight: 600;
-        
-      }
-    }
+  }
 
-    .shortened-url {
-      
+  .input-description {
       p {
-        font-size: 1.6rem;
-        font-weight: 700;
+          font-size: 1.2rem;
+          font-weight: 600;
+      }
+  }
+
+  .shortened-url {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      p {
+          font-size: 1.6rem;
+          font-weight: 700;
       }
       input {
-        border: none;
-        border-radius: 5px;
-        width: 400px;
-        padding: 5px 2px;
-        font-size: 1.3rem;
-        margin-right: 12px;
+          border: none;
+          border-radius: 5px;
+          width: 100%;
+          max-width: 400px;
+          padding: 5px 2px;
+          font-size: 1.3rem;
       }
       button {
-        border: none;
-        border-radius: 5px;
-        width: 100px;
-        padding: 5px 2px;
-        background: white;
-        font-size: 1.1rem;
-        font-weight: 700;
-        cursor: pointer;
+          border: none;
+          border-radius: 5px;
+          width: 100px;
+          padding: 5px 2px;
+          background: white;
+          font-size: 1.1rem;
+          font-weight: 700;
+          cursor: pointer;
       }
-    }
+  }
 
-    .error {
+  .error {
       font-size: 1.3rem;
       font-weight: 700;
       color: red;
-    }
   }
-  
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+      width: 80%;
+      height: auto;
+      padding: 1rem;
+  }
+  .input-field input,
+  .shortened-url input {
+      font-size: 1rem; 
+  }
+  .shortened-url p {
+      font-size: 1.4rem;
+  }
+  .input-description p {
+      font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+      width: 90%;
+      padding: 1rem;
+  }
+  .input-title p,
+  .shortened-url p {
+      font-size: 1.2rem;
+  }
+  .input-field input,
+  .shortened-url input {
+      font-size: 1rem;
+  }
+  .input-field button,
+  .shortened-url button {
+      width: 100%; 
+      font-size: 1rem;
+  }
+  .error {
+      font-size: 1rem;
+  }
+}
